@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Semibold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-Black.ttf);
+    font-weight: 900;
+}
+
+/* 
+
+в font-family - мы выбираем наш шрифт, то есть его называние
+в src url - мы пишем путь до нашего шрифта
+font-weight - это жирность букв
+
+*/

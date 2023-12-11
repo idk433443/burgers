@@ -1,0 +1,322 @@
+@import 'font.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-style: normal;
+    line-height: normal;
+    color: white;
+    font-family: Gilroy;
+    font-weight: 600;
+}
+
+body {
+    background: #191411;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* padding: 15px - с каждой стороны */
+/* padding: 15px 30px - сверху и снизу будет по 15px, А слева и справа будет по 30px  */
+/* padding: 15px 30px 45px - сверху будет 15px, слева и справа будет по 30px, А снизу будет 45px */
+/* padding: 15px 30px 45px 60px - сверху будет 15px, справа будет 30px, снизу будет 45px, А слева будет 45px */
+/* свойство margin работает по такому же принципу сторон */
+
+.section_title {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+}
+
+.nav{
+    padding: 40px 0;
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 88px;
+}
+
+.nav_link {
+    font-size: 18px;
+}
+
+.currency {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.header_content {
+    padding: 100px 0 200px;
+    position: sticky;
+    z-index: 2;
+}
+
+.header_info {
+    max-width: 600px;
+}
+
+.header_info-new {
+    font-size: 18px;
+    padding: 12px 16px;
+    border-radius: 100px;
+    background: #D3320F;
+}
+
+.header_info-title {
+    font-family: Merriweather;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 130%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.header_info-text {
+    font-size: 24px;
+    margin: 56px 0;
+}
+
+.header_info-link {
+    color: #191411;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+    padding: 20px 60px;
+}
+
+.header_content .container {
+    position: relative;
+}
+
+.header_img {
+    position: absolute;
+    top: -123px;
+    left: calc(100% - 980px);
+    z-index: -1;
+}
+
+.header {
+    background: url(../img/main_bg.png) no-repeat top center/ cover;
+    overflow: hidden;
+}
+
+/* why */
+/* why */
+/* why */
+
+.why {
+    background: url(../img/whybg.png) no-repeat top center/ cover;
+    padding-bottom: 180px;
+}
+
+.why_items {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.why_item-title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.why_item-text {
+    line-height: 140%;
+}
+
+
+/* products */
+/* products */
+/* products */
+
+
+
+.products {
+    background: url(../img/burgers_bg.png) no-repeat top center/ 1400px;
+    padding-bottom: 180px;
+}
+
+.products_items {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.products_item {
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #2d2723;
+    padding: 30px;
+    transition: .5s;
+}
+
+.products_item:hover {
+    scale: 1.1;
+    background: #211A16;
+}
+
+.products_item-img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.products_item-title {
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+.products_item-text {
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.products_item-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products_item-price {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.products_item-gram {
+    color: #757575;
+    font-weight: 300;
+}
+
+.products_item-order {
+    border-radius: 8px;
+    background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+    width: 182px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #191411;
+    font-size: 18px;
+}
+
+
+/* order */
+/* order */
+/* order */
+
+.order {
+    background: url(../img/order_bg.png) no-repeat right;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order_img {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+
+form {
+    border-radius: 16px;
+    border: 1px solid #353535;
+    background: #211A16;
+    max-width: 424px;
+    padding: 60px 40px;
+    margin-top: 60px;
+    margin-left: 674px;
+}
+
+.form_title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.form_items {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+input {
+    border-radius: 8px;
+    border: 1px solid #DA8023;
+    background: #211A16;
+    padding: 16px 10px;
+    outline: none;
+}
+
+button {
+    border-radius: 8px;
+    background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+    color: #191411;
+    font-size: 18px;
+    width: 344px;
+    height: 62px;
+}
+
+/* footer */
+/* footer */
+/* footer */
+
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
